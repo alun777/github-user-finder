@@ -9,7 +9,7 @@ const Navbar = props => {
       <h1>
         <i className='fab fa-github' />
         &nbsp;
-        {title}
+        <a href='/'>{title}</a>
       </h1>
     </nav>
   );
