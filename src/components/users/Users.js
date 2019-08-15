@@ -8,7 +8,7 @@ const Users = ({ users, loading }) => {
     return <Spinner />;
   } else {
     return (
-      <div style={userStyle}>
+      <div className='grid-3'>
         {users.map((user, index) => {
           return <UserItem key={index} user={user} />;
         })}
@@ -20,12 +20,6 @@ const Users = ({ users, loading }) => {
 Users.propTypes = {
   users: PropTypes.array.isRequired,
   loading: PropTypes.bool.isRequired
-};
-
-const userStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gridGap: '1rem'
 };
 
 export default Users;
