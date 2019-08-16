@@ -30,7 +30,7 @@ export default (state, action) => {
     case SEARCH_USERS:
       return {
         ...state,
-        user: action.payload,
+        users: action.payload,
         loading: false
       };
     case GET_REPOS:
